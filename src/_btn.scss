@@ -36,6 +36,9 @@
     color: $primary-bg-color;
     animation-name: Tada;
   }
+  &:not(:last-child) {
+    margin-left: 50px;
+  }
 }
 
 @keyframes Tada {
