@@ -9,4 +9,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./colors":"HHAu","./random_integer":"yEcq"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/custom.scss"),require("./data/color_switch");
 },{"./sass/custom.scss":"eYlT","./data/color_switch":"cRgn"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-color-switch.git/src.a412464b.js.map
+//# sourceMappingURL=/goit-js-hw-11-color-switch/src.a412464b.js.map
