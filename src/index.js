@@ -1,3 +1,3 @@
-import './custom.scss'
-import colors from './data/colors';
+import './sass/custom.scss'
+
 import './data/color_switch';
