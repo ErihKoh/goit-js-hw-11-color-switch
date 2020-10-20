@@ -9,13 +9,30 @@ const refs = {
 refs.startBtn.addEventListener('click', onClickBtnStart);
 refs.stopBtn.addEventListener('click', onClickBtnStop);
 
+let timeInterval = null;
+ let isActive = false;
+
 function onClickBtnStart() {
-    let colorBody = randomIntegerFromInterval(0, colors.length);
     
-    document.body.style.backgroundColor = colors[colorBody];
+    if (isActive) {
+        return;
+    }
+    isActive = true;
+    timeInterval = setInterval(changeColorBody, 1000);
+     console.log('click start');
 };
 
 function onClickBtnStop() {
+if (!isActive) {
+        return;
+    }
+    isActive = false;
+    clearInterval(timeInterval);
+    console.log('click stop');
 
 };
 
+function changeColorBody() {
+    let colorIndex = randomIntegerFromInterval(0, colors.length);
+    document.body.style.backgroundColor = colors[colorIndex];
+}
