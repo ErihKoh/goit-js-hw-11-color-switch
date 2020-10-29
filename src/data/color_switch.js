@@ -14,18 +14,14 @@ let timeInterval = null;
 
 function onClickBtnStart() {
     
-    if (isActive) {
-        return;
-    }
+    if (isActive) return;
     isActive = true;
     timeInterval = setInterval(changeColorBody, 1000);
      console.log('click start');
 };
 
 function onClickBtnStop() {
-if (!isActive) {
-        return;
-    }
+if (!isActive) return;
     isActive = false;
     clearInterval(timeInterval);
     console.log('click stop');
